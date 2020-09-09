@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="game-wrapper">
+    <div class="game-wrapper__bg">
+      <!----------- TITLE ----------->
+      <section class="title">
+        <h1 class="title__heading">
+          <span class="title__hading--first-leter">paper</span><span class="title__hading--first-leter">stone</span><span class="title__hading--first-leter">scissors</span>
+        </h1>
+      </section>
+
+      <!----------- GAME BOARDS ----------->
+      <main class="game-boards">
+
+        <!----------- welcome ----------->
+        <div class="board welcome active">
+          <h2 class="board__heading">Hello!</h2>
+          <form action="" class="welcome-form">
+            <label for="name" class="board__subheading welcome-form__label">Enter your name</label>
+            <p class="welcome-form__info">(maximum of 8 characters)</p>
+            <div class="welcome-form__error">Your name is "none"? Really?</div>
+            <input id="name" class="welcome-form__input" type="text" autocomplete="off" maxlength="8">
+            <button class="btn btn--big btn--apply welcome-form__btn">let's play</button>
+          </form>
+        </div>
+
+        <!----------- win ----------->
+        <div class="board win">
+          <h2 class="board__heading">You win :)</h2>
+          <h3 class="board__subheading">Gratulation!</h3>
+          <div class="board__buttons">
+            <button data-option="play-agine" class="btn btn--small btn--apply">next round</button>
+            <button data-option="end-game" class="btn btn--small btn--leave">end of game</button>
+          </div>
+
+        </div>
+
+        <!----------- draw ----------->
+        <div class="board draw">
+          <h2 class="board__heading">Draw!</h2>
+          <h3 class="board__subheading">Almost...</h3>
+          <div class="board__buttons">
+            <button data-option="play-agine" class="btn btn--small btn--apply">next round</button>
+            <button data-option="end-game" class="btn btn--small btn--leave">end of game</button>
+          </div>
+        </div>
+
+        <!----------- loss ----------->
+        <div class="board loss">
+          <h2 class="board__heading">You lost :(</h2>
+          <h3 class="board__subheading">don't give up!</h3>
+          <div class="board__buttons">
+            <button data-option="play-agine" class="btn btn--small btn--apply">next round</button>
+            <button data-option="end-game" class="btn btn--small btn--leave">end of game</button>
+          </div>
+        </div>
+
+        <!----------- user ----------->
+        <div class="board user">
+          <div class="user-headings">
+            <h3 data-option="user-name" class="board__subheading user-headings__name"></h3>
+            <h3 class="board__subheading user-headings__info">your choice ;-)</h3>
+          </div>
+          <div class="user-card">
+            <div data-option="paper" class="user-card__item">
+              <div class="card">
+                <img class="card__icon" src="images/icon-paper.svg" alt="paper symbol">
+                <p class="card__description">Paper</p>
+              </div>
+            </div>
+            <div data-option="stone" class="user-card__item">
+              <div class="card">
+                <img class="card__icon" src="images/icon-stone.svg" alt="paper symbol">
+                <p class="card__description">Stone</p>
+              </div>
+            </div>
+            <div data-option="scissors" class="user-card__item">
+              <div class="card">
+                <img class="card__icon" src="images/icon-scissors.svg" alt="paper symbol">
+                <p class="card__description">Scissors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!----------- end-game ----------->
+        <div class="board end">
+          <h2 data-option="result-info" class="board__heading">You lose!</h2>
+          <h3 data-option="result-info" class="board__subheading">it will be better next time</h3>
+          <div class="end-scorring__wrapper">
+            <div class="scoring-main">
+              <h4 class="scoring-main__player" data-option="user-name">Robert</h4>
+              <div class="scoring-main__win" data-option="win-score">0</div>
+              <div class="scoring-main__loss" data-option="loss-score">0</div>
+              <h4 class="scoring-main__player">computer</h4>
+            </div>
+
+            <div class="scoring-additional">
+              <div class="scoring-additional__item">
+                <h4 class="scoring-additional__heading">draw</h4>
+                <div class="scoring-additional__draw" data-option="draw-score">0</div>
+              </div>
+              <div class="scoring-additional__item">
+                <h4 class="scoring-additional__heading">games</h4>
+                <div class="scoring-additional__games" data-option="games-score">0</div>
+              </div>
+            </div>
+          </div>
+          <button data-option="quit" class="btn btn--big btn--leave">quit</button>
+        </div>
+
+        <!----------- result----------->
+        <div class="board result">
+          <div class="result-card">
+
+            <div class="result-user result-card__item">
+              <h3 data-option="user-name" class="result-card__heading"></h3>
+              <div class="result-card__pic">
+                <div data-option="paper" class="card">
+                  <img class="card__icon" src="images/icon-paper.svg" alt="paper symbol">
+                  <p class="card__description">Paper</p>
+                </div>
+                <div data-option="stone" class="card">
+                  <img class="card__icon" src="images/icon-stone.svg" alt="paper symbol">
+                  <p class="card__description">Stone</p>
+                </div>
+                <div data-option="scissors" class="card">
+                  <img class="card__icon" src="images/icon-scissors.svg" alt="paper symbol">
+                  <p class="card__description">Scissors</p>
+                </div>
+                <div class="card-empty active"></div>
+              </div>
+            </div>
+
+            <div class="result-scorring">
+              <h3 class="result-scorring__heading">score</h3>
+              <div class="result-scorring__table">
+                <div class="scoring-main">
+                  <div class="scoring-main__win" data-option="win-score">0</div>
+                  <div class="scoring-main__loss" data-option="loss-score">0</div>
+                </div>
+                <div class="scoring-additional">
+                  <div class="scoring-additional__item">
+                    <h4 class="scoring-additional__heading">draw</h4>
+                    <div class="scoring-additional__draw" data-option="draw-score">0</div>
+                  </div>
+                  <div class="scoring-additional__item">
+                    <h4 class="scoring-additional__heading">games</h4>
+                    <div class="scoring-additional__games" data-option="games-score">0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-computer result-card__item">
+              <h3 class="result-card__heading">Computer</h3>
+              <div class="result-card__pic">
+                <div data-option="paper" class="card">
+                  <img class="card__icon" src="images/icon-paper.svg" alt="paper symbol">
+                  <p class="card__description">paper</p>
+                </div>
+                <div data-option="stone" class="card">
+                  <img class="card__icon" src="images/icon-stone.svg" alt="paper symbol">
+                  <p class="card__description">stone</p>
+                </div>
+                <div data-option="scissors" class="card">
+                  <img class="card__icon" src="images/icon-scissors.svg" alt="paper symbol">
+                  <p class="card__description">scissors</p>
+                </div>
+                <div class="card-empty active"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!----------- FOOTER ----------->
+      <footer class="game-footer">
+        <p class="game-footer__info"><span class="game-footer__info--sign">&copy;</span> Robert Stolarek</p>
+      </footer>
+    </div>
+  </div>
+
+  <!----------- Rotation info ----------->
+  <div class="rotation-info">
+    <h3 class="rotation-info__heading">Please turn the phone
+      <span class="rotation-info__heading--strong">vertically back</span></h3>
+    <div class="rotation-info__icon"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

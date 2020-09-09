@@ -1,0 +1,1054 @@
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  .rotation-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .game-wrapper {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1500px) {
+
+  /* bg - paper */
+  .game-wrapper::after {
+    transform: scale(1.3) translate(-50%, -5%);
+  }
+
+  /* bg - stone */
+  .game-wrapper::before {
+    transform: scale(1.2) translate(-50%, 0);
+  }
+
+
+
+  @media screen and (max-width: 1360px) {
+
+    /* bg - paper */
+    .game-wrapper::after {
+      transform: scale(1.45) translate(-50%, -5%);
+    }
+
+    /* bg - stone */
+    .game-wrapper::before {
+      transform: scale(1.3) translate(-50%, 0);
+    }
+
+    /*** board - WELCOME ***/
+    .welcome .board__heading {
+      font-size: 9rem;
+      line-height: 8.7rem;
+    }
+
+    .welcome .board__subheading {
+      font-size: 5rem;
+    }
+
+    /* user name form */
+    .welcome-form__info {
+      font-size: 1.8rem;
+    }
+
+    .welcome-form__error {
+      font-size: 1.6rem;
+      margin: 12px 0 5px 0;
+    }
+
+    .welcome-form__input {
+      width: 64%;
+      font-size: 2.8rem;
+      padding: 8px;
+    }
+
+    .welcome-form__btn {
+      margin: 35px 0 0 0;
+    }
+
+    /*** board - WIN / DRAW / LOSS ***/
+    .user,
+    .win,
+    .draw,
+    .loss {
+      height: 53%;
+    }
+
+    /*** board - RESULT ***/
+    .result {
+      height: 44%;
+    }
+
+    /* headings */
+    .board__heading {
+      font-size: 6.3rem;
+      line-height: 5.8rem;
+      letter-spacing: 0.2rem;
+    }
+
+    .board__subheading {
+      font-size: 3.5rem;
+      letter-spacing: 0.1rem;
+    }
+
+    /*** board - WIN / DRAW / LOSS ***/
+    .win .btn,
+    .draw .btn,
+    .draw .loss {
+      margin-top: 20px;
+    }
+
+    .btn--small {
+      font-size: 1.9rem;
+      letter-spacing: .1rem;
+      padding: 9px 16px;
+    }
+
+    .btn--small:hover {
+      transform: scale(1.1);
+    }
+
+
+    /*** board - END ***/
+    .end {
+      height: 95%;
+    }
+
+    .end-scorring__wrapper {
+      width: 76%;
+      margin-top: 25px;
+      margin-bottom: 14px;
+    }
+
+    .end .scoring-main {
+      padding: 5px 0;
+    }
+
+    .end .scoring-main__win,
+    .end .scoring-main__loss,
+    .end .scoring-main::after {
+      font-size: 5.5rem;
+    }
+
+    .end .scoring-additional__heading {
+      font-size: 1.6rem;
+    }
+
+    .end .scoring-additional__games,
+    .end .scoring-additional__draw {
+      font-size: 4rem;
+    }
+  }
+
+
+  @media screen and (max-width: 1200px) {
+
+    /* bg - paper */
+    .game-wrapper::after {
+      transform: scale(1.5) translate(-50%, 0);
+    }
+
+    /* bg - stone */
+    .game-wrapper::before {
+      transform: scale(1.4) translate(-50%, 0);
+    }
+  }
+
+
+  @media screen and (max-width: 1100px) {
+
+    /* bg - paper */
+    .game-wrapper::after {
+      transform: scale(1.6) translate(-50%, 0);
+    }
+
+    /* bg - stone */
+    .game-wrapper::before {
+      transform: scale(1.5) translate(-50%, 0);
+    }
+  }
+
+
+  @media screen and (max-width: 1000px) {
+
+    /* bg - paper */
+    .game-wrapper::after {
+      transform: scale(1.8) translate(-50%, 0);
+    }
+
+    /* bg - stone */
+    .game-wrapper::before {
+      transform: scale(1.7) translate(-50%, 0);
+    }
+  }
+
+
+  @media screen and (max-width: 900px) {
+
+    /* bg - paper */
+    .game-wrapper::after {
+      transform: scale(1.9) translate(-50%, 0);
+    }
+
+    /* bg - stone */
+    .game-wrapper::before {
+      transform: scale(1.8) translate(-50%, 0);
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+
+    /* bg - paper */
+    .game-wrapper::after {
+      transform: scale(2) translate(-50%, 0);
+    }
+
+    /* bg - stone */
+    .game-wrapper::before {
+      transform: scale(1.9) translate(-50%, 0);
+    }
+  }
+
+
+  @media screen and (max-width: 700px) {
+
+    /* bg - paper */
+    .game-wrapper::after {
+      transform: scale(2.4) translate(-50%, 0);
+    }
+
+    /* bg - stone */
+    .game-wrapper::before {
+      transform: scale(2.3) translate(-50%, 0);
+    }
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    html {
+      --board-width: 100%;
+    }
+
+    /* bg - paper */
+    .game-wrapper::after {
+      transform: scale(2.65) translate(-50%, 0);
+    }
+
+    /* bg - stone */
+    .game-wrapper::before {
+      transform: scale(2.4) translate(-50%, 0);
+    }
+  }
+
+
+  @media screen and (max-width: 580px) {
+
+    /*** board - WELCOME ***/
+    .welcome {
+      height: 92%;
+    }
+
+    .card__icon {
+      width: 80%;
+      height: auto;
+      transform: translate(-50%, -50%);
+    }
+
+    .user-card__item:hover .card .card__icon {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .card-empty::before {
+      background-size: 70%;
+    }
+  }
+
+
+  @media screen and (max-width: 550px) {
+
+    /* bg - paper */
+    .game-wrapper::after {
+      transform: scale(2.9) translate(-50%, 0);
+    }
+
+    /* bg - stone */
+    .game-wrapper::before {
+      transform: scale(2.5) translate(-50%, 0);
+    }
+
+    /********** TITLE **********/
+    .title__heading {
+      font-size: 7.6rem;
+      line-height: 7.4rem;
+      letter-spacing: 0.3rem;
+      text-shadow: 6px 6px 0 rgba(var(--green), .2);
+    }
+
+    .title__hading--first-leter::first-letter {
+      font-size: 9.4rem;
+    }
+
+    /* headings */
+    .board__heading {
+      font-size: 6rem;
+      line-height: 5.5rem;
+      letter-spacing: 0.2rem;
+      text-shadow: 3px 3px 0 rgba(var(--green), .5);
+    }
+
+    .board__subheading {
+      font-size: 3.3rem;
+      letter-spacing: 0.1rem;
+      text-shadow: 3px 3px 0 rgba(var(--green), .5);
+    }
+
+    /*** board - WIN / DRAW / LOSS ***/
+    .win .btn,
+    .draw .btn,
+    .draw .loss {
+      margin-top: 16px;
+    }
+
+    .btn--small {
+      font-size: 1.7rem;
+      letter-spacing: .1rem;
+      padding: 8px 16px;
+    }
+
+    .btn--small:hover {
+      transform: scale(1.1);
+    }
+
+
+    /*** board - USER ***/
+    .user-headings__name {
+      margin-bottom: 5px;
+    }
+
+    .user-headings__name,
+    .user-headings__info {
+      font-size: 3.2rem;
+      margin-right: 5px;
+    }
+
+    /* result-scorring */
+    .scoring-main {
+      border-top: 3px solid rgb(var(--green));
+      border-bottom: 3px solid rgb(var(--green));
+      padding: 5px 0;
+    }
+
+    .scoring-additional::after {
+      top: 32%;
+      width: 3px;
+    }
+
+    .result-scorring__heading {
+      margin-bottom: 8px;
+    }
+
+    .scoring-additional__heading {
+      font-size: 1.1rem;
+    }
+
+    .scoring-additional__games,
+    .scoring-additional__draw {
+      font-size: 2.8rem;
+    }
+
+    .scoring-main__win,
+    .scoring-main__loss,
+    .scoring-main::after {
+      font-size: 4.5rem;
+    }
+
+
+    /*** board - USER ***/
+    .card__description {
+      font-size: 1.7rem;
+    }
+
+
+    /*** board - END ***/
+    .end-scorring__wrapper {
+      width: 78%;
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+
+    .end .scoring-main {
+      padding: 5px 0;
+    }
+
+    .end .scoring-main__win,
+    .end .scoring-main__loss,
+    .end .scoring-main::after {
+      font-size: 5.3rem;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+
+    /* BOARD GENERAL */
+    .board {
+      padding: 25px;
+    }
+
+    /* headings */
+    .board__heading {
+      font-size: 5.5rem;
+      line-height: 5.1rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .board__subheading {
+      font-size: 3.1rem;
+    }
+
+    /*** board - WELCOME ***/
+    .welcome {
+      height: 94%;
+    }
+
+    /*** board - WIN / DRAW / LOSS ***/
+    .win .btn,
+    .draw .btn,
+    .draw .loss {
+      margin-top: 14px;
+    }
+
+    .btn--small {
+      font-size: 1.6rem;
+      letter-spacing: .1rem;
+      padding: 9px 16px;
+    }
+
+
+    /*** board - WELCOME ***/
+    .welcome .board__heading {
+      font-size: 8.8rem;
+      line-height: 8.2rem;
+    }
+
+    .welcome .board__subheading {
+      font-size: 4.2rem;
+    }
+
+    /* user name form */
+    .welcome-form__info {
+      font-size: 1.6rem;
+    }
+
+    .welcome-form__error {
+      font-size: 1.4rem;
+      margin: 10px 0 4px 0;
+    }
+
+    .welcome-form__input {
+      width: 64%;
+      font-size: 2.6rem;
+      padding: 6px;
+    }
+
+    .welcome-form__btn {
+      margin: 28px 0 0 0;
+    }
+
+
+    /*** board - END ***/
+    .end-scorring__wrapper {
+      width: 85%;
+      margin-top: 18px;
+      margin-bottom: 11px;
+    }
+
+    .end .scoring-main {
+      padding: 5px 0;
+    }
+
+    .end .scoring-main__win,
+    .end .scoring-main__loss,
+    .end .scoring-main::after {
+      font-size: 5.1rem;
+    }
+
+    .end .scoring-additional__heading {
+      font-size: 1.5rem;
+    }
+
+    .end .scoring-additional__games,
+    .end .scoring-additional__draw {
+      font-size: 3.8rem;
+    }
+
+
+    /********** TITLE **********/
+    .title__heading {
+      font-size: 6.4rem;
+      line-height: 6.1rem;
+      text-shadow: 5px 5px 0 rgba(var(--green), .2);
+    }
+
+    .title__hading--first-leter::first-letter {
+      font-size: 8.2rem;
+    }
+
+    /* result-scorring */
+    .result-card__heading {
+      font-size: 1.8rem;
+    }
+
+    .result-scorring__heading {
+      font-size: 1.5rem;
+    }
+
+    .scoring-main__win,
+    .scoring-main__loss,
+    .scoring-main::after {
+      font-size: 4rem;
+    }
+  }
+
+
+  @media screen and (max-width: 470px) {
+
+    /* bg - paper */
+    .game-wrapper::after {
+      transform: scale(3) translate(-50%, 0);
+    }
+
+    /* bg - stone */
+    .game-wrapper::before {
+      transform: scale(2.6) translate(-50%, 0);
+    }
+
+    /* BOARD GENERAL */
+    .board {
+      padding: 20px;
+    }
+
+    .card__description {
+      font-size: 1.5rem;
+    }
+
+    .user-card__item {
+      border: 4px solid rgba(var(--green), .5);
+    }
+
+    .user-card__item:hover {
+      border: 4px solid rgba(var(--green), 1);
+    }
+
+    .result-card__pic {
+      border: 4px solid rgba(var(--green), .4);
+    }
+
+    .result-card__pic.active {
+      border: 4px solid rgba(var(--green), .8);
+    }
+
+    .result-card__pic.active.winer {
+      border: 5px solid rgb(var(--orange));
+    }
+
+
+    /*** board - USER ***/
+    .user-headings {
+      margin-bottom: 4px;
+    }
+
+    .user-headings__name,
+    .user-headings__info {
+      font-size: 3.3rem;
+      text-shadow: 3px 3px 0 rgba(var(--green), .5);
+    }
+
+    /*** board - END ***/
+    .end-scorring__wrapper {
+      width: 90%;
+      margin-top: 15px;
+      margin-bottom: 9px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 450px) {
+
+    /* BOARD GENERAL */
+    .board {
+      padding: 15px;
+    }
+
+    /* BUTTONS */
+    .btn--big {
+      font-size: 2.5rem;
+      padding: 11px 25px;
+    }
+
+    .board__buttons .btn {
+      margin: 0 8px;
+    }
+
+
+    /********** TITLE **********/
+    .title__heading {
+      font-size: 6.1rem;
+      line-height: 5.8rem;
+    }
+
+    .title__hading--first-leter::first-letter {
+      font-size: 7.9rem;
+    }
+
+
+    /*** board - RESULT / board - USER ***/
+    .user-card__item,
+    .result-card__item,
+    .result-scorring {
+      width: 31%;
+    }
+
+    /* result-scorring */
+    .result-card__heading {
+      font-size: 1.5rem;
+    }
+
+    .result-scorring__heading {
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+    }
+
+    .scoring-main__win,
+    .scoring-main__loss,
+    .scoring-main::after {
+      font-size: 4.4rem;
+    }
+
+    .scoring-additional__games,
+    .scoring-additional__draw {
+      font-size: 2.4rem;
+    }
+
+
+    /* headings */
+    .board__heading {
+      font-size: 5.1rem;
+      line-height: 4.6rem;
+    }
+
+    .board__subheading {
+      font-size: 2.8rem;
+      letter-spacing: 0.1rem;
+    }
+
+    /*** board - WIN / DRAW / LOSS ***/
+    .win .btn,
+    .draw .btn,
+    .draw .loss {
+      margin-top: 12px;
+    }
+
+    .btn--small {
+      font-size: 1.4rem;
+      letter-spacing: .1rem;
+      padding: 9px 15px;
+    }
+
+
+    /*** board - END ***/
+    .end {
+      height: 97%;
+    }
+
+    .end-scorring__wrapper {
+      width: 95%;
+      margin-top: 15px;
+      margin-bottom: 9px;
+    }
+
+    .end .scoring-main {
+      padding: 5px 0;
+    }
+
+    .end .scoring-main__player {
+      font-size: 1.6rem;
+    }
+
+    .end .scoring-main__win,
+    .end .scoring-main__loss,
+    .end .scoring-main::after {
+      font-size: 5rem;
+    }
+
+    .end .scoring-additional__heading {
+      font-size: 1.4rem;
+    }
+
+    .end .scoring-additional__games,
+    .end .scoring-additional__draw {
+      font-size: 3.6rem;
+    }
+  }
+
+
+  @media screen and (max-width: 420px) {
+
+    /* BUTTONS */
+    .btn--big {
+      font-size: 2.2rem;
+      padding: 11px 24px;
+    }
+
+    .board__buttons .btn {
+      margin: 0 7px;
+    }
+
+
+    /********** TITLE **********/
+    .title__heading {
+      font-size: 5.4rem;
+      line-height: 5rem;
+      letter-spacing: .1rem;
+      text-shadow: 4px 4px 0 rgba(var(--green), .2);
+    }
+
+    .title__hading--first-leter::first-letter {
+      font-size: 7rem;
+    }
+
+    .welcome {
+      height: 96%;
+    }
+
+
+    /*** board - WIN / DRAW / LOSS ***/
+    .user,
+    .win,
+    .draw,
+    .loss {
+      height: 51%;
+    }
+
+
+    /*** board - RESULT ***/
+    .result {
+      height: 45%;
+    }
+
+
+    .user-card__item {
+      border: 3px solid rgba(var(--green), .5);
+    }
+
+    .user-card__item:hover {
+      border: 3px solid rgba(var(--green), 1);
+    }
+
+    .result-card__pic {
+      border: 3px solid rgba(var(--green), .4);
+    }
+
+    .result-card__pic.active {
+      border: 3px solid rgba(var(--green), .8);
+    }
+
+    .result-card__pic.active.winer {
+      border: 4px solid rgb(var(--orange));
+    }
+
+
+    /*** board - USER ***/
+    .user-headings__name,
+    .user-headings__info {
+      font-size: 2.8rem;
+      text-shadow: 2px 2px 0 rgba(var(--green), .5);
+    }
+
+
+    /* result-scorring */
+    .scoring-main {
+      padding: 5px 0;
+    }
+
+    .scoring-additional::after {
+      top: 40%;
+    }
+
+    .result-scorring__heading {
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+    }
+
+    .scoring-main__win,
+    .scoring-main__loss,
+    .scoring-main::after {
+      font-size: 3.5rem;
+    }
+
+
+    /************ FOOTER ************/
+    .game-footer__info {
+      font-size: 1.1rem;
+    }
+
+    .game-footer__info--sign {
+      font-size: 1.5rem
+    }
+
+    /* headings */
+    .board__heading {
+      font-size: 4.4rem;
+      line-height: 4rem;
+      text-shadow: 2px 2px 0 rgba(var(--green), .5);
+    }
+
+    .board__subheading {
+      font-size: 2.4rem;
+      text-shadow: 2px 2px 0 rgba(var(--green), .5);
+    }
+
+    /*** board - WIN / DRAW / LOSS ***/
+    .win .btn,
+    .draw .btn,
+    .draw .loss {
+      margin-top: 10px;
+    }
+
+    .btn--small {
+      font-size: 1.4rem;
+      letter-spacing: .1rem;
+      padding: 7px 15px;
+    }
+  }
+
+
+  @media screen and (max-width: 400px) {
+
+    /********** TITLE **********/
+    .title__heading {
+      font-size: 5.3rem;
+      letter-spacing: .2rem;
+    }
+
+    .title__hading--first-leter::first-letter {
+      font-size: 6.8rem;
+    }
+
+    /* BOARD GENERAL */
+    .board {
+      padding: 10px;
+    }
+
+    /* BUTTONS */
+    .btn--big {
+      font-size: 2rem;
+      padding: 10px 22px;
+    }
+
+    /* headings */
+    .board__heading {
+      font-size: 4.2rem;
+      line-height: 3.9rem;
+    }
+
+
+    /*** board - USER ***/
+    .user-headings__name,
+    .user-headings__info {
+      font-size: 2.2rem;
+      line-height: 2.1rem;
+    }
+
+    /*** board - WELCOME ***/
+    .welcome .board__heading {
+      font-size: 6.4rem;
+      line-height: 4rem;
+      text-shadow: 3px 3px 0 rgba(var(--green), .5);
+      letter-spacing: 0.4rem;
+      margin-top: 5px;
+    }
+
+    .welcome .board__subheading {
+      font-size: 3.4rem;
+      text-shadow: 2px 2px 0 rgba(var(--green), .5);
+      letter-spacing: 0.2rem;
+    }
+
+    /* user name form */
+    .welcome-form__info {
+      font-size: 1.5rem;
+    }
+
+    .welcome-form__error {
+      font-size: 1.3rem;
+      margin: 6px 0 3px 0;
+    }
+
+    .welcome-form__input {
+      width: 70%;
+      font-size: 2.1rem;
+      padding: 5px;
+    }
+
+    .welcome-form__btn {
+      margin: 20px 0 0 0;
+    }
+
+
+    /*** board - USER ***/
+    .user-card__item {
+      border: 3px solid rgba(var(--green), .5);
+    }
+
+    .user-card__item:hover {
+      border: 3px solid rgba(var(--green), 1);
+    }
+
+    .result-card__pic {
+      border: 3px solid rgba(var(--green), .4);
+    }
+
+    .result-card__pic.active {
+      border: 3px solid rgba(var(--green), .8);
+    }
+
+
+    /* result-scorring */
+    .result-card__heading,
+    .result-scorring__heading {
+      margin-bottom: 3px;
+    }
+
+    .scoring-additional__heading {
+      font-size: 1rem;
+    }
+
+    .scoring-additional__games,
+    .scoring-additional__draw {
+      font-size: 2.1rem;
+    }
+  }
+
+
+  @media screen and (max-width: 360px) {
+
+    /********** TITLE **********/
+    .title__heading {
+      font-size: 5.2rem;
+      line-height: 4.9rem;
+      letter-spacing: .1rem;
+    }
+
+
+    /* headings */
+    .board__heading {
+      font-size: 4rem;
+      line-height: 3.7rem;
+    }
+
+    .board__subheading {
+      font-size: 2.2rem;
+    }
+
+    .title__hading--first-leter::first-letter {
+      font-size: 6.9rem;
+    }
+
+    /* result-scorring */
+    .scoring-main {
+      padding: 2px 0;
+    }
+
+    .scoring-additional__games,
+    .scoring-additional__draw {
+      font-size: 1.8rem;
+    }
+
+    /*** board - END ***/
+    .end {
+      height: 99%;
+    }
+
+    .end-scorring__wrapper {
+      width: 100%;
+      margin-top: 13px;
+      margin-bottom: 7px;
+    }
+
+    .end .scoring-main__win,
+    .end .scoring-main__loss,
+    .end .scoring-main::after {
+      font-size: 4.8rem;
+    }
+
+    .end .scoring-main__player {
+      font-size: 1.4rem;
+    }
+
+    .end .scoring-additional__heading {
+      font-size: 1.3rem;
+    }
+
+    .end .scoring-additional__games,
+    .end .scoring-additional__draw {
+      font-size: 3.4rem;
+    }
+  }
+
+
+  @media screen and (max-width: 340px) {
+
+    /********** TITLE **********/
+    .title__heading {
+      font-size: 4.8rem;
+      line-height: 4.6rem;
+      letter-spacing: .1rem;
+      text-shadow: 3px 3px 0 rgba(var(--green), .2);
+    }
+
+    .title__hading--first-leter::first-letter {
+      font-size: 6.5rem;
+    }
+
+    /* result-scorring */
+    .scoring-main {
+      padding: 2px 0;
+    }
+
+    .scoring-additional__games,
+    .scoring-additional__draw {
+      font-size: 1.8rem;
+    }
+
+    /*** board - END ***/
+    .end-scorring__wrapper {
+      width: 100%;
+      margin-top: 11px;
+      margin-bottom: 6px;
+    }
+
+    .end .scoring-main__win,
+    .end .scoring-main__loss,
+    .end .scoring-main::after {
+      font-size: 4.6rem;
+    }
+
+    .end .scoring-main__player {
+      font-size: 1.2rem;
+    }
+
+    .end .scoring-additional__heading {
+      font-size: 1.1rem;
+    }
+
+    .end .scoring-additional__games,
+    .end .scoring-additional__draw {
+      font-size: 3.2rem;
+    }
+
+  }
